@@ -9,8 +9,9 @@ import HelloWorld from './components/HelloWorld.vue'
       <HelloWorld />
       <div class="wrapper lg:flex lg:flex-wrap lg:place-items-start">
         <nav class="w-100 mt-8 flex gap-4 text-xl">
-          <RouterLink to="/">Home</RouterLink>
-          <RouterLink to="/about">About</RouterLink>
+          <RouterLink to="/" class="hover:text-magenta" :class="{ 'text-magenta underline': $route.path === '/', 'text-green': $route.path != '/' }">Home</RouterLink>
+          <RouterLink to="/about" class="hover:text-magenta" :class="{ 'text-magenta underline': $route.path === '/about', 'text-green': $route.path != '/about' }">About</RouterLink>
+          <RouterLink to="/lessons" class="hover:text-magenta" :class="{ 'text-magenta underline': $route.path === '/lessons', 'text-green': $route.path != '/lessons' }">Lessons</RouterLink>
         </nav>
       </div>
     </div>
