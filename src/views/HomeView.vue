@@ -4,7 +4,7 @@ import rpImage from '@/assets/rp-guit2.png'
 </script>
 
 <template>
-  <main class="flex flex-column">
+  <main class="flex flex-column w-50vw">
     <!-- <TheWelcome /> -->
     <img :src="rpImage">
   </main>
