@@ -6,7 +6,7 @@ import rpImage from '@/assets/rp-guit2.png'
 <template>
   <main class="flex flex-column w-50vw">
     <!-- <TheWelcome /> -->
-    <img :src="rpImage">
+    <img :src="rpImage" class="">
   </main>
 </template>
 <style>
