@@ -16,7 +16,13 @@ export default {
       'darkred': '#501f3a',
       'white': '#e2e8f0'
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'tapes': "url('@/assets/tapes-red.png')",
+        'tapemachine': "url('@/assets/tape-machine.jpg')",
+        'console':  "url('@/assets/console.jpg')",
+      }
+    },
     fontFamily: {
       outfit: ['"Outfit"', ...defaultTheme.fontFamily.sans]
     },

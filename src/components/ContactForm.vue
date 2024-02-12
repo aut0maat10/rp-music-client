@@ -13,9 +13,9 @@ const handleSubmit = () => {
 }
 </script>
 <template>
-  <div class="flex flex-col justify-center bg-gray pt-8">
-    <h2 class="text-black font-bold text-4xl mx-auto">Contact</h2>
-    <div class="form flex flex-col gap-1 my-4 justify-center items-center bg-black p-2 lg:p-8 my-8 rounded w-1/3 md:w-1/2 m-auto shadow-lg">
+  <div id="contact" class="flex flex-col justify-center bg-tapes bg-contain py-20">
+    <h2 class="text-magenta font-bold text-4xl mx-auto mb-4">Contact</h2>
+    <div class="form flex flex-col gap-1 my-4 justify-center items-center bg-black p-2 lg:p-8 my-8 rounded w-full md:w-1/2 m-auto shadow-lg">
       <label for="firstname" class="text-lg text-white self-start">First name</label>
       <InputText type="text" id="firstname" class="border py-2 px-3 text-black w-full focus:outline focus:outline-green rounded" v-model="form.firstName" />
       <label for="lastname" class="text-lg text-white self-start">Last name</label>
