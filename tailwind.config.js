@@ -14,7 +14,8 @@ export default {
       'magenta': '#cb2d6f',
       'gray': '#ccc',
       'darkred': '#501f3a',
-      'white': '#e2e8f0'
+      'white': '#e2e8f0',
+      'yellow': '#f4b860'
     },
     extend: {
       backgroundImage: {

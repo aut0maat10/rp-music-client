@@ -1,6 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import BandCamp from './components/BandCamp.vue';
 import VideoSection from './components/VideoSection.vue';
 import ContactForm from './components/ContactForm.vue';
 import PageFooter from './components/PageFooter.vue';
@@ -23,6 +24,7 @@ import PageFooter from './components/PageFooter.vue';
     </header>
     <RouterView/>
   </div>
+  <BandCamp />
   <VideoSection />>
   <ContactForm />
   <PageFooter />
