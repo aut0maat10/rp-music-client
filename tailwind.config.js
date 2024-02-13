@@ -20,7 +20,9 @@ export default {
     extend: {
       backgroundImage: {
         'tapes': "url('@/assets/tapes-red.png')",
+        'tapesblack': "url('@/assets/tapesblack.png')",
         'tapemachine': "url('@/assets/tape-machine.jpg')",
+        'tapemachineblack': "url('@/assets/tapemachineblack.png')",
         'console':  "url('@/assets/console.jpg')",
       }
     },

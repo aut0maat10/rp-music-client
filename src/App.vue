@@ -12,6 +12,15 @@ import PageFooter from './components/PageFooter.vue';
     <header class="lg:h-screen bg-black lg:w-[50vw] lg:h-[100vh] flex justify-center flex-1 p-12 lg:p-0">
       <div class="wrapper lg:flex lg:flex-wrap justify-center flex-start flex-col lg:h-3/4">
         <HelloWorld />
+        <Transition
+            enter-active-class="delay-1000 duration-300 ease-out"
+            enter-from-class="transform opacity-0 scale-75"
+            enter-to-class="opacity-100 scale-100"
+            leave-active-class="duration-500 ease-in"
+            leave-from-class="opacity-100 scale-100"
+            leave-to-class="transform opacity-0 scale-75"
+            appear
+          >
         <div class="wrapper lg:flex lg:flex-wrap lg:place-items-start">
           <nav class="w-100 mt-8 flex gap-4 text-xl">
             <RouterLink to="/" class="hover:text-magenta" :class="{ 'text-magenta underline': $route.path === '/', 'text-green': $route.path != '/' }">Home</RouterLink>
@@ -20,6 +29,7 @@ import PageFooter from './components/PageFooter.vue';
             <RouterLink to="/contact" class="hover:text-magenta" :class="{ 'text-magenta underline': $route.path === '/contact', 'text-green': $route.path != '/contact' }">Contact</RouterLink>
           </nav>
         </div>
+      </Transition>
       </div>
     </header>
     <RouterView/>
