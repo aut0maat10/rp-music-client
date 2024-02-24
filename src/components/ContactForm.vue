@@ -1,21 +1,35 @@
 <script setup>
 import { reactive } from 'vue'
 import InputText from 'primevue/inputtext';
+import Button from 'primevue/button'
 import Textarea from 'primevue/textarea';
+import axios from 'axios'
 const form = reactive({
   firstName: '',
   lastName: '',
   email: '',
   message: ''
 })
-const handleSubmit = () => {
-  alert('submitted!')
+const handleSubmit = async () => {
+  const payload = JSON.stringify({
+    firstName: form.firstName,
+    lastName: form.lastName,
+    email: form.email,
+    message: form.message
+  })
+  try {
+    const response = await axios.post(import.meta.env.VITE_FORM_API_URL, payload, {headers: {'Content-Type': 'application/json'}})
+    console.log(response)
+  } catch(error) {
+    console.log(error)
+  }
+  
 }
 </script>
 <template>
-  <div id="contact" class="flex flex-col justify-center bg-tapes bg-contain py-20">
+  <div id="contactform" class="flex flex-col justify-center bg-tapes bg-contain py-20">
     <h2 class="text-magenta font-bold text-5xl mx-auto mb-4">Contact</h2>
-    <div class="form flex flex-col gap-1 my-4 justify-center items-center bg-black p-2 md:p-8 my-8 rounded w-full md:w-2/3 lg:w-1/2 m-auto shadow-lg">
+    <div class="form flex flex-col gap-1 my-4 justify-center items-center bg-black px-2 py-8 md:p-8 my-8 rounded w-full md:w-2/3 lg:w-1/2 m-auto shadow-lg">
       <label for="firstname" class="text-lg text-white self-start">First name</label>
       <InputText type="text" id="firstname" class="border py-2 px-3 text-black w-full focus:outline focus:outline-green rounded" v-model="form.firstName" />
       <label for="lastname" class="text-lg text-white self-start">Last name</label>
