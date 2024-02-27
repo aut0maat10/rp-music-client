@@ -2,7 +2,7 @@
 import rpImage from '@/assets/rp-guit2.png'
 </script>
 <template>
-  <div class="contact bg-darkred flex flex-col justify-center p-8">
+  <div class="contact bg-darkred flex flex-col justify-center items-center p-8">
     <img :src="rpImage" class="opacity-10 z-0 max-lg:hidden absolute">
     <h2 class="text-2xl lg:text-4xl text-magenta mb-2 lg:mb-4">Contact</h2>
     <p class="text-xl">
@@ -15,7 +15,7 @@ import rpImage from '@/assets/rp-guit2.png'
       Want to talk about your project? Discuss pros and cons of FRFR with amp modelers in live situations? Share your favorite motorik beats?
       <br/><br/>
     </p>
-    <div class="text-left z-20 lg:mt-8">
+    <div class="text-left z-20 lg:mt-8 self-start">
       <p class="text-xl">Please send me a message through the</p>
       <a class="text-green hover:text-magenta hover:bg-darkred hover:scale-110 z-100 text-xl" href="#contactform">contact form</a>
       <p class="text-xl">at the bottom of the page.</p>

@@ -2,7 +2,7 @@
 import rpImage from '@/assets/rp-guit2.png'
 </script>
 <template>
-  <div class="lessons bg-darkred flex flex-col p-8">
+  <div class="lessons bg-darkred flex justify-center items-center flex-col p-8">
     <h3 class="text-2xl lg:text-4xl text-magenta mb-2 lg:mb-4">Lessons</h3>
     <p class="text-xl z-50">
       <span class="text-xl text-green">If you would like to take a lesson please fill out the </span><a href="#contactform" class="text-white z-100 hover:text-magenta hover:bg-darkred">contact form</a> <span class="text-green">below, and I'll be in touch!</span>
