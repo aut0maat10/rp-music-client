@@ -24,6 +24,7 @@ export default {
         'tapemachine': "url('@/assets/tape-machine.jpg')",
         'tapemachineblack': "url('@/assets/tapemachineblack.png')",
         'console':  "url('@/assets/console.jpg')",
+        'studio':  "url('@/assets/studio.jpeg')",
       }
     },
     fontFamily: {
