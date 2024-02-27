@@ -12,7 +12,7 @@
       leave-to-class="transform opacity-0 scale-75"
       appear
     >
-      <h1 class="text-4xl lg:text-6xl text-magenta py-3 font-bold">Robin Pahlman</h1>
+      <h1 class="text-5xl lg:text-6xl text-magenta py-3 font-bold">Robin Pahlman</h1>
     </Transition>
     <Transition
       enter-active-class="delay-500 duration-500 ease-out"
