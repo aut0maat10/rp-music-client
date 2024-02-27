@@ -14,9 +14,9 @@ const currentYear = () => new Date().getFullYear()
       </nav>
     </div>
     <div class="w-full lg:w-1/6 flex justify-around">
-      <a href="" class="hover:text-magenta hover:bg-black"><i class="pi pi-instagram"></i></a>
-      <a href="" class="hover:text-magenta hover:bg-black"><i class="pi pi-youtube hover:text-magenta"></i></a>
-      <a href="" class="hover:text-magenta hover:bg-black"><i class="pi pi-facebook hover:text-magenta"></i></a>
+      <a href="" class="hover:text-magenta hover:bg-black"><i class="pi pi-instagram hover:scale-110"></i></a>
+      <a href="" class="hover:text-magenta hover:bg-black"><i class="pi pi-youtube hover:text-magenta hover:scale-110"></i></a>
+      <a href="" class="hover:text-magenta hover:bg-black"><i class="pi pi-facebook hover:text-magenta hover:scale-110"></i></a>
     </div>
     <div class="text-green">
       <span>&copy;</span>

@@ -45,7 +45,7 @@ const onSubmit = handleSubmit(values => {
       <input type="text" id="email" class="border py-2 px-3 text-black w-full focus:outline focus:outline-green rounded" v-model="email" :emailAttrs="emailAttrs" />
       <label for="message" class="text-white text-lg self-start">Message *<span class="text-green ml-4">{{ errors.message }}</span></label>
       <textarea id="message" v-model="message" :messageAttrs="messageAttrs" rows="5" cols="30" class="border py-2 px-3 text-black w-full focus:outline focus:outline-green rounded" />
-      <button :disabled="!meta.valid" class="bg-magenta px-8 py-2 mt-8 rounded hover:bg-green hover:text-magenta disabled:bg-darkred disabled:pointer-events-none"><span class="pi pi-send mr-4 ml-0"></span>Send</button>
+      <button :disabled="!meta.valid" class="bg-magenta transition duration-300 ease-in-out px-8 py-2 mt-8 rounded hover:bg-green disabled:bg-darkred disabled:pointer-events-none disabled:text-gray"><span class="pi pi-send mr-4 ml-0"></span>Send</button>
     </form>
     <div v-if="formSubmitted" class="bg-black flex flex-col justify-center items-center md:w-[50vw] m-2 rounded py-24">
       <h3 class="text-4xl">Great to hear from you!</h3>

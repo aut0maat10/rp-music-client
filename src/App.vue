@@ -23,10 +23,10 @@ import PageFooter from './components/PageFooter.vue';
           >
         <div class="wrapper lg:flex lg:flex-wrap lg:place-items-start">
           <nav class="w-100 mt-8 flex gap-4 text-xl">
-            <RouterLink to="/" class="hover:text-magenta" :class="{ 'text-magenta underline': $route.path === '/', 'text-green': $route.path != '/' }">Home</RouterLink>
-            <RouterLink to="/about" class="hover:text-magenta" :class="{ 'text-magenta underline': $route.path === '/about', 'text-green': $route.path != '/about' }">Bio</RouterLink>
-            <RouterLink to="/lessons" class="hover:text-magenta" :class="{ 'text-magenta underline': $route.path === '/lessons', 'text-green': $route.path != '/lessons' }">Lessons</RouterLink>
-            <RouterLink to="/contact" class="hover:text-magenta" :class="{ 'text-magenta underline': $route.path === '/contact', 'text-green': $route.path != '/contact' }">Contact</RouterLink>
+            <RouterLink to="/" class="transition duration-150 ease-in-out hover:text-magenta hover:bg-black hover:scale-105" :class="{ 'text-magenta underline': $route.path === '/', 'text-green': $route.path != '/' }">Home</RouterLink>
+            <RouterLink to="/about" class="transition duration-150 ease-in-out hover:text-magenta hover:bg-black hover:scale-105" :class="{ 'text-magenta underline': $route.path === '/about', 'text-green': $route.path != '/about' }">Bio</RouterLink>
+            <RouterLink to="/lessons" class="transition duration-150 ease-in-out hover:text-magenta hover:bg-black hover:scale-105" :class="{ 'text-magenta underline': $route.path === '/lessons', 'text-green': $route.path != '/lessons' }">Lessons</RouterLink>
+            <RouterLink to="/contact" class="transition duration-150 ease-in-out hover:text-magenta hover:bg-black hover:scale-105" :class="{ 'text-magenta underline': $route.path === '/contact', 'text-green': $route.path != '/contact' }">Contact</RouterLink>
           </nav>
         </div>
       </Transition>
