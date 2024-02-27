@@ -21,7 +21,7 @@ const [lastName, lastNameAttrs] = defineField('lastName');
 const [message, messageAttrs] = defineField('message');
 
 const onSubmit = handleSubmit(values => {
-  alert(JSON.stringify(values, null, 2));
+  // alert(JSON.stringify(values, null, 2));
   try {
     const payload = JSON.stringify(values)
     const response = axios.post(import.meta.env.VITE_FORM_API_URL, payload, {headers: {'Content-Type': 'application/json'}})
@@ -47,9 +47,9 @@ const onSubmit = handleSubmit(values => {
       <textarea id="message" v-model="message" :messageAttrs="messageAttrs" rows="5" cols="30" class="border py-2 px-3 text-black w-full focus:outline focus:outline-green rounded" />
       <button :disabled="!meta.valid" class="bg-magenta transition duration-300 ease-in-out px-8 py-2 mt-8 rounded hover:bg-green disabled:bg-darkred disabled:pointer-events-none disabled:text-gray"><span class="pi pi-send mr-4 ml-0"></span>Send</button>
     </form>
-    <div v-if="formSubmitted" class="bg-black flex flex-col justify-center items-center md:w-[50vw] m-2 rounded py-24">
-      <h3 class="text-4xl">Great to hear from you!</h3>
-      <p>Thanks for your message. I will get back to you ASAP.</p>
+    <div v-if="formSubmitted" class="bg-black flex flex-col justify-center lg:items-center md:w-[50vw] m-2 rounded py-12 lg:py-24 px-4 lg:px-12">
+      <h3 class="text-2xl lg:text-4xl mb-2 lg:mb-4">Great to hear from you!</h3>
+      <p class="text-xl">Thanks for your message. I will get back to you ASAP.</p>
     </div>
   </div>
 </template>
