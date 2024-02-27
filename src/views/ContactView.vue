@@ -3,28 +3,27 @@ import rpImage from '@/assets/rp-guit2.png'
 </script>
 <template>
   <div class="contact bg-darkred flex flex-col items-center justify-center px-8">
+    <img :src="rpImage" class="opacity-10 z-0 max-lg:hidden absolute">
     <h2 class="text-4xl text-magenta pb-4">Contact</h2>
-    <p>Need professional guitar tracks for a project?
-    <br/><br/>
-    Looking for a versatile guitarist for your next show?
-    <br/><br/>
-    Looking to take your guitar playing to the next level?
-    <br/><br/>
-    Want to talk about Krautrock? Amp modelers? Bergman movies?
-    <br/><br/>
-    <span class="text-2xl text-green">Please send me a message with the <a class="text-magenta" href="https://google.com">contact form</a> below.</span>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <p class="text-2xl">
+      Need professional <span class="text-green">guitar tracks</span> for your project?
+      <br/><br/>
+      Looking for a <span class="text-green">versatile guitarist</span> for your next show?
+      <br/><br/>
+      Looking to <span class="text-green">take your guitar playing to the next level?</span>
+      <br/><br/>
+      Want to talk about your project? Discuss pros and cons of FRFR with amp modelers in live situations? Share your favorite motorik beats?
+      <br/><br/>
     </p>
-    <img :src="rpImage" class="opacity-10 max-lg:hidden absolute">
+    <div class="text-left z-20 lg:mt-8">
+      <p class="text-2xl">Please send me a message through the</p>
+      <a class="text-green hover:text-magenta z-100 text-3xl" href="#contactform">contact form</a>
+      <p class="text-2xl">at the bottom of the page.</p>
+      <span class="pi pi-arrow-circle-down text-3xl mt-4"></span>
+    </div>
+    
   </div>
 </template>
 
 <style>
-/* @media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-} */
 </style>
