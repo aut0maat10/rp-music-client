@@ -2,7 +2,7 @@
 import rpImage from '@/assets/rp-guit2.png'
 </script>
 <template>
-  <div class="about bg-darkred flex flex-col justify-center px-8">
+  <div class="about bg-darkred flex flex-col justify-center p-8">
     <h3 class="text-4xl text-magenta mb-4">Lessons</h3>
     <p>
       <span class="text-2xl text-green">If you would like to take a lesson please fill out the contact form below, and I'll be in touch. </span>

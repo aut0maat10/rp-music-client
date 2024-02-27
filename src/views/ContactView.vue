@@ -2,7 +2,7 @@
 import rpImage from '@/assets/rp-guit2.png'
 </script>
 <template>
-  <div class="contact bg-darkred flex flex-col items-center justify-center px-8">
+  <div class="contact bg-darkred flex flex-col justify-center p-8">
     <img :src="rpImage" class="opacity-10 z-0 max-lg:hidden absolute">
     <h2 class="text-4xl text-magenta pb-4">Contact</h2>
     <p class="text-2xl">

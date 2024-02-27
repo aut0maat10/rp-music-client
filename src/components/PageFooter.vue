@@ -6,21 +6,21 @@ const currentYear = () => new Date().getFullYear()
   <div class="h-1/6 p-12 bg-black flex flex-col gap-4 justify-center items-center">
     <div>
       <nav class="w-100 mt-8 flex gap-4 text-xl">
-        <RouterLink to="/" class="hover:text-magenta" :class="{ 'text-magenta underline': $route.path === '/', 'text-green': $route.path != '/' }">Home</RouterLink>
-        <RouterLink to="/about" class="hover:text-magenta" :class="{ 'text-magenta underline': $route.path === '/about', 'text-green': $route.path != '/about' }">Bio</RouterLink>
-        <RouterLink to="/lessons" class="hover:text-magenta" :class="{ 'text-magenta underline': $route.path === '/lessons', 'text-green': $route.path != '/lessons' }">Lessons</RouterLink>
-        <RouterLink to="/contact" class="hover:text-magenta" :class="{ 'text-magenta underline': $route.path === '/lessons', 'text-green': $route.path != '/lessons' }">Contact</RouterLink>
+        <RouterLink to="/" class="transition-colors duration-300 ease-in-out hover:text-magenta hover:bg-black" :class="{ 'text-magenta underline': $route.path === '/', 'text-green': $route.path != '/' }">Home</RouterLink>
+        <RouterLink to="/about" class="transition-colors duration-300 ease-in-out hover:text-magenta hover:bg-black" :class="{ 'text-magenta underline': $route.path === '/about', 'text-green': $route.path != '/about' }">Bio</RouterLink>
+        <RouterLink to="/lessons" class="transition-colors duration-300 ease-in-out hover:text-magenta hover:bg-black" :class="{ 'text-magenta underline': $route.path === '/lessons', 'text-green': $route.path != '/lessons' }">Lessons</RouterLink>
+        <RouterLink to="/contact" class="transition-colors duration-300 ease-in-out hover:text-magenta hover:bg-black" :class="{ 'text-magenta underline': $route.path === '/lessons', 'text-green': $route.path != '/lessons' }">Contact</RouterLink>
         
       </nav>
     </div>
-    <div class="w-1/6 flex justify-around">
-      <a href=""><i class="pi pi-instagram"></i></a>
-      <a href=""><i class="pi pi-youtube"></i></a>
-      <a href=""><i class="pi pi-facebook"></i></a>
+    <div class="w-full lg:w-1/6 flex justify-around">
+      <a href="" class="hover:text-magenta hover:bg-black"><i class="pi pi-instagram"></i></a>
+      <a href="" class="hover:text-magenta hover:bg-black"><i class="pi pi-youtube hover:text-magenta"></i></a>
+      <a href="" class="hover:text-magenta hover:bg-black"><i class="pi pi-facebook hover:text-magenta"></i></a>
     </div>
-    <div>
+    <div class="text-green">
       <span>&copy;</span>
-      <span>{{ currentYear() }}</span> Robin Pahlman</div>
+      <span>{{ currentYear() }}</span><span class="text-magenta">&nbsp;Robin Pahlman</span></div>
   </div>
 </template>
 

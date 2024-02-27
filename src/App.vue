@@ -8,7 +8,7 @@ import PageFooter from './components/PageFooter.vue';
 </script>
 
 <template>
-  <div class="outer bg-darkred lg:grid lg:grid-cols-2 lg:p-0 h-1/2 lg:h-screen">
+  <div class="outer bg-darkred md:h-1/2 lg:grid lg:grid-cols-2 lg:p-0 h-1/2 lg:h-screen">
     <header class="bg-black h-1/2 md:h-1/2 lg:w-[50vw] lg:h-full xl:h[90vh] flex justify-center flex-1 p-12 lg:p-0">
       <div class="wrapper lg:flex lg:flex-wrap justify-center flex-start flex-col lg:h-3/4">
         <HelloWorld />

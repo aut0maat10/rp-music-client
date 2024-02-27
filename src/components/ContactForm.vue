@@ -34,7 +34,7 @@ const onSubmit = handleSubmit(values => {
 </script>
 
 <template>
-  <div id="contactform" class="flex flex-col justify-center items-center bg-tapes bg-contain py-20">
+  <div id="contactform" class="flex flex-col justify-center items-center bg-tapes bg-contain py-12 lg:py-20 p-2">
     <h2 class="text-magenta font-bold text-5xl mx-auto mb-4">Contact</h2>
     <form v-if="!formSubmitted" @submit="onSubmit" class="form flex flex-col gap-1 my-4 justify-center items-center bg-black px-2 py-8 md:p-8 my-8 rounded w-full md:w-2/3 lg:w-1/2 m-auto shadow-lg">
       <label for="firstname" class="text-lg text-white self-start">First name *<span class="text-green ml-4">{{ errors.firstName }}</span></label>
