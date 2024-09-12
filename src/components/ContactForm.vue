@@ -26,7 +26,6 @@ const onSubmit = handleSubmit(values => {
     const payload = JSON.stringify(values)
     const response = axios.post(import.meta.env.VITE_FORM_API_URL, payload, {headers: {'Content-Type': 'application/json'}})
     formSubmitted.value = true
-    console.log(response)
   } catch(error) {
     console.log(error)
   }  
